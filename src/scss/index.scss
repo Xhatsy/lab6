@@ -1,0 +1,55 @@
+@import './normalize.css';
+// Основные цвета из палитры
+$color-primary: #E68617; // Основной цвет
+$color-secondary: #9A6F3D; // Вторичный цвет
+$color-accent: #7B4404; // Акцентный цвет
+$color-light: #F6B162; // Светлый цвет
+$color-background: #F6CD9C; // Цвет фона
+
+// Глобальные стили
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, $color-primary, $color-background); // Градиент
+    color: $color-secondary;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: $color-light;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+// Пример заголовков
+.header {
+    &__title {
+        font-size: 2em;
+        color: $color-primary;
+    }
+
+    &__subtitle {
+        font-size: 1.5em;
+        color: $color-secondary;
+    }
+}
+
+// Пример кнопки
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: $color-accent;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
